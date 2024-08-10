@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); 
+
+}
+
+:root{
+    --main-color:  #1F2937;
+}
+
+  
+
+* {
+margin: 0;
+pad: 0;
+font-family: roboto;}
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer , .header {display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+/* header  ----------------*/
+
+.page{
+    background: var(--main-color);
+    color: white;
+    padding: 18px 200px;
+    }
+
+    .header {
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+        align-items: center;
+    }
+    
+        .headerLogo {display: flex;
+          font-size: 24px;
+            font-weight: bolder;
+         }
+        
+         li a {
+            text-decoration: none;
+            color: #f9faf8;
+            font-size: 18px;
+        }
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+        }
+
+    .information { 
+        display: flex;
+        justify-content: space-between;
+        align-items: self-start;
+        margin-bottom: 120px;
+        font-family: Roboto;
+
+        gap: 18px;
+    }
+        .web {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+           
+            }
+
+            .title {
+             font-size: 48px;
+             font-weight: bolder;
+                }
+            .subtext {font-size: 18px;
+                text-align:left;
+                text-wrap: wrap;
+            }
+            .singUp {
+                cursor: pointer;
+                padding: 8px 32px;
+                margin: 12px 0px;
+                border-radius: 8px;
+                background: rgb(80, 124, 253);
+                color: white;
+                font-size: 18px;
+                font-weight: bolder;
+              }
+              
+        .holder > img {
+            width: 500px;
+            height: 250px;
+            object-fit: contain;
+            background-color: #8a8a8a;
+        }
+
+.container{
+    padding: 50px;
+}
+.content { 
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    background-color: #f9faf8;
+}
+
+    .column {
+        max-width: 200px;
+        border: #1F2937;
+    }
+
+    .column > img { 
+       border: red solid; 
+
+       border-radius: 22px;
+       width: 200px;
+       height: 200px;
+       object-fit: fill;
+
+    }
+
+ .quote {
+    background-color: #8a8a8a;
+padding: 150px;
+}
+
+.footer {
+    background-color: var(--main-color);
+    padding: 50px;
+    text-align: center;
+}
