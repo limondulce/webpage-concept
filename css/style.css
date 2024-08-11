@@ -1,144 +1,178 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-ThinItalic-webfont.eot');
-    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-ThinItalic-webfont.woff') format('woff'),
-         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); 
-
+	font-family: "Roboto";
+	src: url("Roboto-ThinItalic-webfont.eot");
+	src: url("Roboto-ThinItalic-webfont.eot?#iefix") format("embedded-opentype"),
+		url("Roboto-ThinItalic-webfont.woff") format("woff"),
+		url("Roboto-ThinItalic-webfont.ttf") format("truetype"),
+		url("Roboto-ThinItalic-webfont.svg#RobotoThinItalic") format("svg");
 }
 
-:root{
-    --main-color:  #1F2937;
+:root {
+	--main-color: #1f2937;
+	--c-hero-w: #f9faf8;
+	--c-hero-w-s: #e5e7eb;
+	--c-button: #3882f6;
+	--padding: 15%;
+	--s-padding: 20%;
+	--m-padding: 5%;
+	--padding-s: 150px;
+	--font-one: 18px;
+	--font-two: 24px;
+	--font-three: 36px;
+	--font-four: 48px;
 }
-
-  
 
 * {
-margin: 0;
-pad: 0;
-font-family: roboto;}
-
-
+	margin: 0;
+	padding: 0;
+	font-family: roboto;
+}
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
-.footer , .header {display: flex;
-justify-content: space-between;
-align-items: center;
+body div {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
 }
 
-
-/* header  ----------------*/
-
-.page{
-    background: var(--main-color);
-    color: white;
-    padding: 18px 200px;
-    }
-
-    .header {
-        background-color: var(--main-color);
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 120px;
-        align-items: center;
-    }
-    
-        .headerLogo {display: flex;
-          font-size: 24px;
-            font-weight: bolder;
-         }
-        
-         li a {
-            text-decoration: none;
-            color: #f9faf8;
-            font-size: 18px;
-        }
-        ul {
-            display: flex;
-            gap: 30px;
-            list-style-type: none;
-        }
-
-    .information { 
-        display: flex;
-        justify-content: space-between;
-        align-items: self-start;
-        margin-bottom: 120px;
-        font-family: Roboto;
-
-        gap: 18px;
-    }
-        .web {
-            display: flex;
-            flex-direction: column;
-            align-items:flex-start;
-           
-            }
-
-            .title {
-             font-size: 48px;
-             font-weight: bolder;
-                }
-            .subtext {font-size: 18px;
-                text-align:left;
-                text-wrap: wrap;
-            }
-            .singUp {
-                cursor: pointer;
-                padding: 8px 32px;
-                margin: 12px 0px;
-                border-radius: 8px;
-                background: rgb(80, 124, 253);
-                color: white;
-                font-size: 18px;
-                font-weight: bolder;
-              }
-              
-        .holder > img {
-            width: 500px;
-            height: 250px;
-            object-fit: contain;
-            background-color: #8a8a8a;
-        }
-
-.container{
-    padding: 50px;
-}
-.content { 
-    display: flex;
-    justify-content: center;
-    gap: 52px;
-    background-color: #f9faf8;
-}
-
-    .column {
-        max-width: 200px;
-        border: #1F2937;
-    }
-
-    .column > img { 
-       border: red solid; 
-
-       border-radius: 22px;
-       width: 200px;
-       height: 200px;
-       object-fit: fill;
-
-    }
-
- .quote {
-    background-color: #8a8a8a;
-padding: 150px;
+.header {
+	background-color: var(--main-color);
+	display: flex;
+	flex-grow: 0;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	padding-left: var(--padding);
+	padding-right: var(--padding);
 }
 
 .footer {
-    background-color: var(--main-color);
-    padding: 50px;
-    text-align: center;
+	background-color: var(--main-color);
+	color: white;
+	display: flex;
+	flex-grow: 0;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: var(--padding);
+	padding-right: var(--padding);
+}
+
+.hero {
+	background: var(--main-color);
+	color: var(--c-hero-w);
+	padding-top: var(--m-padding);
+	padding-bottom: var(--padding-s);
+	padding-left: var(--padding);
+	padding-right: var(--padding);
+}
+
+.pop {
+	padding-top: var(--m-padding);
+	padding-bottom: var(--m-padding);
+	padding-left: var(--padding);
+	padding-right: var(--padding);
+}
+
+.container,
+.quote {
+	padding-top: var(--m-padding);
+	padding-bottom: var(--m-padding);
+	padding-left: var(--s-padding);
+	padding-right: var(--s-padding);
+}
+
+.quote {
+	background-color: var(--c-hero-w-s);
+}
+
+.headerLogo {
+	font-size: var(--font-two);
+	color: var(--c-hero-w);
+	font-weight: bolder;
+}
+
+li a {
+	text-decoration: none;
+	color: #f9faf8;
+	font-size: 18px;
+}
+ul {
+	display: flex;
+	gap: 30px;
+	list-style-type: none;
+}
+
+.information {
+	display: flex;
+	justify-content: space-between;
+	align-items: self-start;
+	font-family: Roboto;
+	gap: 157px;
+}
+.web {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.holder {
+	display: flex;
+	justify-content: end;
+}
+
+.title {
+	font-size: 48px;
+	font-weight: bolder;
+}
+.subtext {
+	color: var(--c-hero-w-s);
+	font-size: var(--font-one);
+	text-align: left;
+	text-wrap: wrap;
+}
+.singUp {
+	cursor: pointer;
+	padding: 8px 32px;
+	margin: 12px 0px;
+	border-radius: 8px;
+	background: rgb(80, 124, 253);
+	color: white;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.holder > img {
+	min-width: 680px;
+	max-width: 700px;
+	height: 250px;
+	object-fit: cover;
+	object-position: 0% 0%;
+	background-color: #8a8a8a;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	gap: 52px;
+	background-color: #f9faf8;
+}
+
+.column {
+	max-width: 200px;
+	border: #1f2937;
+}
+
+.column > img {
+	border: red solid;
+
+	border-radius: 22px;
+	width: 200px;
+	height: 200px;
+	object-fit: fill;
 }
